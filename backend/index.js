@@ -5,7 +5,7 @@ const cors=require("cors")
 const app = express();
 const PORT = process.env.PORT || 3000;
 const corsOptions = {
-    origin: 'https://pay-out.vercel.app/',
+    origin: 'https://pay-out.vercel.app',
     optionsSuccessStatus: 200 
 }
 
