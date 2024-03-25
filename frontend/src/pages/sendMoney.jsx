@@ -33,7 +33,7 @@ export const SendMoney = () => {
                 </label>
                 <input
                   type="text" 
-                  inputmode="numeric"
+                  inputMode="numeric"
                     pattern="[0-9]*"
                   onChange={(e) => {
                     setAmount(e.target.value);
@@ -47,7 +47,7 @@ export const SendMoney = () => {
                 onClick={async () => {
                   await axios
                     .post(
-                      "http://https://payout-gvh5.onrender.com/api/v1/account/transfer",
+                      "https://payout-gvh5.onrender.com/api/v1/account/transfer",
                       {
                         to: id,
                         amount,

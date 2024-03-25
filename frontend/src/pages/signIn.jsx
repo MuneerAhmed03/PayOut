@@ -38,7 +38,7 @@ export const Signin = () => {
                             localStorage.setItem("token", response.data.token);
                             navigate("/dashboard");
                         } catch (error) {
-                            console.error("Error signing in", error);r
+                            console.error("Error signing in", error);
                         }
                     }} label={"Sign in"} />
                 </div>

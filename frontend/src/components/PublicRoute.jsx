@@ -11,6 +11,7 @@ export const PublicRoute = ({ element, ...rest })=> {
       const response = await checkAuth();
       setIsAuthenticated(response);
     };
+    
     authStatus();
   }, []);
   if (isAuthenticated === null) {
