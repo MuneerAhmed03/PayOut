@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export async function checkAuth() {
   try {
-    const response = await axios.get("http://localhost:3000/api/v1/user/authenticated", {
+    const response = await axios.get("https://payout-gvh5.onrender.com/api/v1/user/authenticated", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }

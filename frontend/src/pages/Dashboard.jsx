@@ -7,7 +7,7 @@ import axios from "axios"
 export const Dashboard = () => {
     const [user,setUser]=useState({});
     useEffect(()=>{
-        axios.get("http://localhost:3000/api/v1/account/user-datails",{
+        axios.get("https://payout-gvh5.onrender.com/api/v1/account/user-datails",{
             headers:{
                 Authorization: "Bearer " + localStorage.getItem("token")
     }}).then(response=>{

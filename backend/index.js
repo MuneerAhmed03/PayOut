@@ -4,8 +4,12 @@ const cors=require("cors")
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const corsOptions = {
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json())
 app.use("/api/v1",rootRouter);
 
